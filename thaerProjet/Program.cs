@@ -51,7 +51,7 @@ int num4 = 0;
 int count = 0;
 
 // Ask the user to guiss the number.
-Console.WriteLine("Type a number to guiss wich number i chosse and then press Enter");
+Console.WriteLine("Type a number to guiss wich number i chosse from (1 to 100) and then press Enter");
 
 do
 {
@@ -107,6 +107,28 @@ Decimal number = Convert.ToDecimal(Console.ReadLine(), CultureInfo.InvariantCult
 // Use Math.Ceiling to round up
 Decimal roundedNumber = Math.Ceiling(number);
 Console.WriteLine("the result :"+ " "+ roundedNumber);
+
+
+Console.Write("\nPress 'Enter' to contenu...");
+
+while (Console.ReadKey().Key != ConsoleKey.Enter)
+{
+}
+
+
+Console.WriteLine("=============================================================================");
+    Console.WriteLine("multiplication table program");
+
+for (int i = 1; i <= 10; i++)
+{
+
+    for     (int j = 1; j <= 10; j++)
+    {
+        Console.WriteLine($"{i} * {j} ="+ " "+ i * j + " \t" );
+    }
+    Console.WriteLine(" ");
+}
+
 
 
 Console.Write("\nPress 'Enter' to exit the process...");
