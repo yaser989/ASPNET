@@ -125,7 +125,7 @@ for (int i = 1; i <= 10; i++)
 
     for     (int j = 1; j <= 10; j++)
     {
-        Console.WriteLine($"{i} * {j} ="+ " "+ i * j + " \t" );
+        Console.WriteLine("\t" + $"{ i} * {j} ="+ " "+ i * j + " \t" );
     }
     Console.WriteLine(" ");
 }
@@ -153,7 +153,7 @@ tab1.Add(0);
 tab1.Add(5);
 tab1.Add(4);
 
-Console.WriteLine("the first table");
+Console.WriteLine("\t" + "the first table");
 
 foreach (int o in tab1)
 {
@@ -169,7 +169,7 @@ List<int> tab2 = new List<int>();
 tab2.AddRange(tab1);
 
 
-Console.WriteLine("the second table with order of growth");
+Console.WriteLine("\t" + "the second table with order of growth");
 
 foreach (int o in tab2)
 {
@@ -200,9 +200,30 @@ else
     Console.WriteLine($"your world ({myString})  is not Palindrome.");
 }
 
+Console.WriteLine("=================================================================");
 
+// Declare variables and then initialize to zero.
+int numb1 = 0;
+int numb2 = 0;
 
+// Ask the user to type the first number.
+Console.WriteLine("Type a number, and then press Enter");
+numb1 = Convert.ToInt32(Console.ReadLine());
 
+// Ask the user to type the second number.
+Console.WriteLine("Type another number, and then press Enter");
+numb2 = Convert.ToInt32(Console.ReadLine());
+
+for (int i = numb1; i < numb2; i++) {
+
+    if (i == numb1)
+    {
+        continue;
+       
+    }
+
+    Console.WriteLine("\t" + i);
+}
 
 
 
