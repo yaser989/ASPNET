@@ -2,8 +2,10 @@
 using System.Globalization;
 using System.Linq;
 
+
 Console.WriteLine("Hello, World!");
 
+/*
 String firstName = "Thaer";
 Console.BackgroundColor = ConsoleColor.Blue;
 Console.WriteLine("First Name:" + firstName);
@@ -153,11 +155,11 @@ tab1.Add(0);
 tab1.Add(5);
 tab1.Add(4);
 
-Console.WriteLine("\t" + "the first table");
+Console.WriteLine("the first table");
 
 foreach (int o in tab1)
 {
-    Console.WriteLine(o);
+    Console.WriteLine("\t" + o);
 }
 
 
@@ -169,11 +171,11 @@ List<int> tab2 = new List<int>();
 tab2.AddRange(tab1);
 
 
-Console.WriteLine("\t" + "the second table with order of growth");
+Console.WriteLine("the second table with order of growth");
 
 foreach (int o in tab2)
 {
-    Console.WriteLine(o);
+    Console.WriteLine("\t" + o);
 }
 
 Console.WriteLine("=================================================================");
@@ -224,7 +226,32 @@ for (int i = numb1; i < numb2; i++) {
 
     Console.WriteLine("\t" + i);
 }
+*/
+Console.WriteLine("=================================================================");
+Console.WriteLine("Enter numbers withe comma like (1,2,33)");
 
+ String userInput = Convert.ToString(Console.ReadLine());
+
+var userArray = userInput.Split(',').Select(i => int.Parse(i)).ToArray();
+
+
+    foreach (int h in userArray)
+    {
+
+ 
+
+    if (h % 2 == 0)
+    {
+       
+        Console.WriteLine("\t" + "Marital numbers" + "\t" + h);
+    }
+    else
+    {
+       Console.WriteLine("\t" + "Odd numbers" + "\t" + h);
+    }
+
+
+}
 
 
 
