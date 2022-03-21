@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Globalization;
+using System.Linq;
 
 Console.WriteLine("Hello, World!");
 
@@ -130,10 +131,54 @@ for (int i = 1; i <= 10; i++)
 }
 
 
+Console.WriteLine("===========================================================");
 
-Console.Write("\nPress 'Enter' to exit the process...");
 
-while (Console.ReadKey().Key != ConsoleKey.Enter )
+List<int> tab1 = new List<int>();
+
+tab1.Add(8);
+tab1.Add(10);
+tab1.Add(1);
+tab1.Add(7);
+tab1.Add(9);
+tab1.Add(6);
+tab1.Add(2);
+tab1.Add(3);
+tab1.Add(0);
+tab1.Add(5);
+tab1.Add(4);
+
+Console.WriteLine("the first table");
+
+foreach (int o in tab1)
+{
+    Console.WriteLine(o);
+}
+
+
+
+tab1.Sort();
+
+List<int> tab2 = new List<int>();
+
+tab2.AddRange(tab1);
+
+
+Console.WriteLine("the second table with order of growth");
+
+foreach (int o in tab2)
+{
+    Console.WriteLine(o);
+}
+
+
+
+
+
+
+Console.Write("\nPress 'E' to exit the process...");
+
+while (Console.ReadKey().Key != ConsoleKey.E )
 {
 }
 
