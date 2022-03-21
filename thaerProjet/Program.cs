@@ -133,6 +133,11 @@ for (int i = 1; i <= 10; i++)
 
 Console.WriteLine("===========================================================");
 
+Console.Write("\nPress 'Enter' to contenu...");
+
+while (Console.ReadKey().Key != ConsoleKey.Enter)
+{
+}
 
 List<int> tab1 = new List<int>();
 
@@ -170,6 +175,32 @@ foreach (int o in tab2)
 {
     Console.WriteLine(o);
 }
+
+Console.WriteLine("=================================================================");
+Console.WriteLine("enter one world to see if it is Palindrome or not");
+
+String myString = Convert.ToString(Console.ReadLine());
+
+
+
+string first = myString.Substring(0, myString.Length / 2);
+char[] arr = myString.ToCharArray();
+
+Array.Reverse(arr);
+
+string temp = new string(arr);
+string second = temp.Substring(0, temp.Length / 2);
+
+if (first.Equals(second))
+{
+    Console.WriteLine($"your world  ({myString})  is Palindrome.");
+}
+else
+{
+    Console.WriteLine($"your world ({myString})  is not Palindrome.");
+}
+
+
 
 
 
