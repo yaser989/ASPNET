@@ -1,0 +1,15 @@
+D:\AspProjet\thaerProjet\bin\Debug\net6.0\thaerProjet.exe
+D:\AspProjet\thaerProjet\bin\Debug\net6.0\thaerProjet.deps.json
+D:\AspProjet\thaerProjet\bin\Debug\net6.0\thaerProjet.runtimeconfig.json
+D:\AspProjet\thaerProjet\bin\Debug\net6.0\thaerProjet.dll
+D:\AspProjet\thaerProjet\bin\Debug\net6.0\thaerProjet.pdb
+D:\AspProjet\thaerProjet\obj\Debug\net6.0\thaerProjet.csproj.AssemblyReference.cache
+D:\AspProjet\thaerProjet\obj\Debug\net6.0\thaerProjet.GeneratedMSBuildEditorConfig.editorconfig
+D:\AspProjet\thaerProjet\obj\Debug\net6.0\thaerProjet.AssemblyInfoInputs.cache
+D:\AspProjet\thaerProjet\obj\Debug\net6.0\thaerProjet.AssemblyInfo.cs
+D:\AspProjet\thaerProjet\obj\Debug\net6.0\thaerProjet.csproj.CoreCompileInputs.cache
+D:\AspProjet\thaerProjet\obj\Debug\net6.0\thaerProjet.dll
+D:\AspProjet\thaerProjet\obj\Debug\net6.0\refint\thaerProjet.dll
+D:\AspProjet\thaerProjet\obj\Debug\net6.0\thaerProjet.pdb
+D:\AspProjet\thaerProjet\obj\Debug\net6.0\thaerProjet.genruntimeconfig.cache
+D:\AspProjet\thaerProjet\obj\Debug\net6.0\ref\thaerProjet.dll
