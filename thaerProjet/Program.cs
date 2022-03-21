@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Globalization;
+
 Console.WriteLine("Hello, World!");
 
 String firstName = "Thaer";
@@ -97,6 +99,14 @@ if (Console.ReadKey().Key == ConsoleKey.O)
 
 }
 
+Console.WriteLine("============================================================");
+
+Console.WriteLine("type a number to round it like 1.05");
+Decimal number = Convert.ToDecimal(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+// Use Math.Ceiling to round up
+Decimal roundedNumber = Math.Ceiling(number);
+Console.WriteLine("the result :"+ " "+ roundedNumber);
 
 
 Console.Write("\nPress 'Enter' to exit the process...");
