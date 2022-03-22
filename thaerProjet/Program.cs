@@ -226,7 +226,7 @@ for (int i = numb1; i < numb2; i++) {
 
     Console.WriteLine("\t" + i);
 }
-*/
+
 Console.WriteLine("=================================================================");
 Console.WriteLine("Enter numbers withe comma like (1,2,33)");
 
@@ -252,7 +252,41 @@ var userArray = userInput.Split(',').Select(i => int.Parse(i)).ToArray();
 
 
 }
+*/
 
+Console.WriteLine("=================================================================");
+
+
+Random rd = new Random();
+
+int rand_num = rd.Next(100, 200);
+
+Player player = new Player();
+Character character = new Character();
+
+// Ask the user to type the name of your character.
+Console.WriteLine("type the name of your character ");
+character.name = Convert.ToString(Console.ReadLine());
+
+// Ask the user to type the name of the player.
+Console.WriteLine("type the name of your player ");
+player.name = Convert.ToString(Console.ReadLine());
+
+
+character.health = rand_num;
+character.strength = rand_num;
+character.luck = rand_num;
+Console.WriteLine("\t" + "your character :" + $"{character.name} \n"+ 
+    "\t health :"+ $"{character.health} \n" + "\t luck :"+ $"{character.luck} \n"
+    + "\t strength :"+ $"{character.strength} \n");
+
+
+player.health = rand_num;
+player.strength = rand_num;
+player.luck = rand_num;
+Console.WriteLine("\t" + "the player :" + $"{player.name} \n" +
+    "\t health :" + $"{player.health} \n" + "\t luck :" + $"{player.luck} \n"
+    + "\t strength :" + $"{player.strength} \n");
 
 
 Console.Write("\nPress 'E' to exit the process...");
