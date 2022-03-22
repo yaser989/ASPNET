@@ -259,7 +259,6 @@ Console.WriteLine("=============================================================
 
 Random rd = new Random();
 
-int rand_num = rd.Next(100, 200);
 
 Player player = new Player();
 Character character = new Character();
@@ -273,17 +272,17 @@ Console.WriteLine("type the name of your player ");
 player.name = Convert.ToString(Console.ReadLine());
 
 
-character.health = rand_num;
-character.strength = rand_num;
-character.luck = rand_num;
+character.health = rd.Next(100, 200);
+character.strength = rd.Next(100, 200);
+character.luck = rd.Next(100, 200);
 Console.WriteLine("\t" + "your character :" + $"{character.name} \n"+ 
     "\t health :"+ $"{character.health} \n" + "\t luck :"+ $"{character.luck} \n"
     + "\t strength :"+ $"{character.strength} \n");
 
 
-player.health = rand_num;
-player.strength = rand_num;
-player.luck = rand_num;
+player.health = rd.Next(100, 200);
+player.strength = rd.Next(100, 200);
+player.luck = rd.Next(100, 200);
 Console.WriteLine("\t" + "the player :" + $"{player.name} \n" +
     "\t health :" + $"{player.health} \n" + "\t luck :" + $"{player.luck} \n"
     + "\t strength :" + $"{player.strength} \n");
