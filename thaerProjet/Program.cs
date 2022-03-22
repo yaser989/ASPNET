@@ -5,7 +5,7 @@ using System.Linq;
 
 Console.WriteLine("Hello, World!");
 
-/*
+
 String firstName = "Thaer";
 Console.BackgroundColor = ConsoleColor.Blue;
 Console.WriteLine("First Name:" + firstName);
@@ -208,6 +208,9 @@ Console.WriteLine("=============================================================
 int numb1 = 0;
 int numb2 = 0;
 
+
+Console.WriteLine("chosse two numbers to see the numbers between the two numbers like (2 -> 8");
+
 // Ask the user to type the first number.
 Console.WriteLine("Type a number, and then press Enter");
 numb1 = Convert.ToInt32(Console.ReadLine());
@@ -234,8 +237,13 @@ Console.WriteLine("Enter numbers withe comma like (1,2,33)");
 
 var userArray = userInput.Split(',').Select(i => int.Parse(i)).ToArray();
 
+List<int> userList = new List<int>();
 
-    foreach (int h in userArray)
+userList.AddRange(userArray);
+
+userList.Sort();
+
+    foreach (int h in userList)
     {
 
  
@@ -252,7 +260,7 @@ var userArray = userInput.Split(',').Select(i => int.Parse(i)).ToArray();
 
 
 }
-*/
+
 
 Console.WriteLine("=================================================================");
 
@@ -287,6 +295,7 @@ Console.WriteLine("\t" + "the player :" + $"{player.name} \n" +
     "\t health :" + $"{player.health} \n" + "\t luck :" + $"{player.luck} \n"
     + "\t strength :" + $"{player.strength} \n");
 
+    
 
 Console.Write("\nPress 'E' to exit the process...");
 
